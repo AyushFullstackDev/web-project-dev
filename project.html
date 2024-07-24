@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://www.creativefabrica.com/wp-content/uploads/2022/02/21/ab-letter-typography-vector-logo-design-Graphics-25677286-1.jpg" type="image/x-icon">
+    <title>CSS</title>
+    <style>
+        section {
+           min-height: 100vh;
+           padding: 20px 9% 5px;
+        }
+        .projects {
+  background: rgb(243, 235, 235);
+}
+
+.projects h2 {
+  font-size: 6rem;
+  margin-bottom: 4rem;
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.projects-container .projects-box {
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 0 0 1rem var(--bg-color);
+  overflow: hidden;
+  display: flex;
+}
+
+.projects-box img {
+  width: 100%;
+  transition: 0.5s ease;
+  opacity: 0.7;
+}
+
+.projects-box:hover img {
+  transform: scale(1.1);
+}
+
+.projects-box .projects-layer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.39);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  transform: translateY(100%);
+  transition: 0.5s ease;
+  opacity: 0;
+}
+
+.projects-box:hover .projects-layer {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.projects-layer h4 {
+  font-size: 2.6rem;
+  font-weight: 700;
+}
+
+.projects-layer p {
+  font-size: 1.6rem;
+  margin: 1rem 0 2rem;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+}
+
+.projects-layer a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 5rem;
+  height: 5rem;
+  background: #000000;
+  border-radius: 20%;
+}
+
+.projects-layer a i {
+  font-size: 2rem;
+}
+@media (min-width:300px) and (max-width:1024px) {
+    .projects-container {
+    grid-template-columns: 1fr;
+  }
+    
+}
+    </style>
+</head>
+<body>
+  <!-- Project Section -->
+   <!-- first -->
+    <section class="projects" id="projects">
+        <h2>CSS Projects</h2>
+        <div class="projects-container">
+          <div class="projects-box">
+            <a href="flex_one.html">
+              <img
+                src="assets/css1.jpg"
+                alt="Project Image" style="background-size: cover;"
+              />
+              <div class="projects-layer">
+                <p style="font-size: 40px; color: #fff;">Flex Layout 1</p>
+              </div>
+            </a>
+          </div>
+          <!-- second -->
+          <a href="flex_two.html">
+          <div class="projects-box">
+            <img src="assets/css2.png" alt="Project Image" />
+            <div class="projects-layer">
+              <p  style="font-size: 40px; color: #fff; ">Flex Layout 2</p>
+            </div>
+          </div></a>
+          <!-- third -->
+          <a href="flex_three.html">
+            <div class="projects-box">
+              <img src="assets/css4.png" alt="Project Image" />
+              <div class="projects-layer">
+                <p  style=" font-size: 40px; color: #fff; ">Flex Layout 3</p>
+              </div>
+            </div></a>
+        </div>
+        <!-- fourth -->
+        <div class="projects-container">
+            <div class="projects-box">
+              <a href="flex_four.html">
+                <img
+                  src="assets/css3.png"
+                  alt="Project Image" style="background-size: cover;"
+                />
+                <div class="projects-layer">
+                  <p style="font-size: 40px; color: #fff;">Flex Layout 4</p>
+                </div>
+              </a>
+            </div>
+            <!-- fifth -->
+            <a href="iframe.html">
+            <div class="projects-box">
+              <img src="assets/css5.jpg" alt="Project Image" />
+              <div class="projects-layer">
+                <p  style=" font-size: 40px; color: #fff; ">iFrame Layout</p>
+              </div>
+            </div></a>
+            <!-- sixth -->
+            <a href="iframe_one.html">
+              <div class="projects-box">
+                <img src="assets/css6.png" alt="Project Image" height="100%" width="100%" />
+                <div class="projects-layer">
+                  <p  style=" font-size: 40px; color: #fff; ">iFrame Layout 2</p>
+                </div>
+              </div></a>
+              <!-- seventh -->
+              <div class="projects-box">
+                <a href="loginepage_flex.html">
+                  <img
+                    src="assets/css7.jpg"
+                    alt="Project Image" style="background-size: cover;"
+                  />
+                  <div class="projects-layer">
+                    <p style="font-size: 40px; color: #fff;">Flex page using Flex</p>
+                  </div>
+                </a>
+              </div>
+              <!-- eight -->
+              <a href="loginePage_table.html">
+              <div class="projects-box">
+                <img src="assets/css8.jpg" alt="Project Image" />
+                <div class="projects-layer">
+                  <p  style=" font-size: 40px; color: #fff; ">Login page using Table</p>
+                </div>
+              </div></a>
+              <!-- nine -->
+              <a href="tags_in_htm.html">
+                <div class="projects-box">
+                  <img src="assets/css9.jpg" alt="Project Image" height="100%" width="100%" />
+                  <div class="projects-layer">
+                    <p  style=" font-size: 40px; color: #fff; ">All tags in HTML</p>
+                  </div>
+                </div></a>
+          </div>
+      </section>
+</body>
+</html>

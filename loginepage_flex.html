@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Fav icon -->
+    <link
+    rel="icon"
+    href="https://www.creativefabrica.com/wp-content/uploads/2022/02/21/ab-letter-typography-vector-logo-design-Graphics-25677286-1.jpg"
+    type="image/x-icon"
+  />
+    <title>Login Page</title>
+    <style>
+      .main {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .form {
+        width: 40%;
+        height: 70%;
+        display: flex;
+        flex-direction: column;
+        box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+        border-radius: 20px;
+      }
+      .one {
+        width: 100%;
+        height: 45%;
+        text-align: center;
+      }
+      .two {
+        width: 100%;
+        height: 20%;
+        text-align: center;
+      }
+      .three {
+        width: 100%;
+        height: 25%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+      }
+      input{
+        width: 80%;
+        height: 60%;
+        border-radius: 20px;
+        font-size: 1.5rem;
+        border: 0px solid;
+        box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0,0, 0, 0.2);
+      }
+      button{
+        width: 80%;
+        height: 60%;
+        font-size: 2rem;
+        background-color: green;
+        border-radius: 20px;
+        border: 0px solid;
+        box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+      }
+
+      /* media responsive */
+      @media screen and (max-width:300px) {
+        .main {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .form {
+        width: 100%;
+        height: 60%;
+        display: flex;
+        flex-direction: column;
+        box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+        border-radius: 20px;
+      }
+      .one{
+        display: none;
+      }
+        
+      }
+
+      @media screen and (max-width: 600px) {
+        .main {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .form {
+        width: 100%;
+        height: 60%;
+        display: flex;
+        flex-direction: column;
+        box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+        border-radius: 20px;
+      }
+    }
+      @media screen and (max-width:720px) {
+        .main {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .form {
+        width: 100%;
+        height: 60%;
+        display: flex;
+        flex-direction: column;
+        box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+        border-radius: 20px;
+      }
+        
+      }
+      @media screen and (max-width:1020px) {
+        .main {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .form {
+        width: 100%;
+        height: 60%;
+        display: flex;
+        flex-direction: column;
+        box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+        border-radius: 20px;
+      }
+        
+      }
+      @media screen and (max-width:1220px) {
+        .main {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .form {
+        width: 80%;
+        height: 70%;
+        display: flex;
+        flex-direction: column;
+        box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+        border-radius: 20px;
+      }
+        
+      }
+
+    </style>
+  </head>
+  <body>
+    <!-- Login Page Layout -->
+    <div class="main">
+      <div class="form">
+        <!-- Logo -->
+        <div class="one">
+            <img src="./assets/login page.jpg">
+        </div>
+        <!-- Username -->
+        <div class="two">
+            <input type="text" placeholder="Username" name="username" id="username" required>
+        </div>
+        <!-- Password -->
+        <div class="two">
+            <input type="password" placeholder="Password" name="password" id="password" required>
+        </div>
+        <!-- Login Button -->
+        <div class="three">
+            <button>Login</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

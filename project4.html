@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://www.creativefabrica.com/wp-content/uploads/2022/02/21/ab-letter-typography-vector-logo-design-Graphics-25677286-1.jpg" type="image/x-icon">
+    <title>HTML</title>
+    <style>
+        section {
+           min-height: 100vh;
+           padding: 20px 9% 5px;
+        }
+        .projects {
+  background: rgb(243, 235, 235);
+}
+
+.projects h2 {
+  font-size: 6rem;
+  margin-bottom: 4rem;
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.projects-container .projects-box {
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 0 0 1rem var(--bg-color);
+  overflow: hidden;
+  display: flex;
+}
+
+.projects-box img {
+  width: 100%;
+  transition: 0.5s ease;
+  opacity: 0.7;
+}
+
+.projects-box:hover img {
+  transform: scale(1.1);
+}
+
+.projects-box .projects-layer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.39);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  transform: translateY(100%);
+  transition: 0.5s ease;
+  opacity: 0;
+}
+
+.projects-box:hover .projects-layer {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.projects-layer h4 {
+  font-size: 2.6rem;
+  font-weight: 700;
+}
+
+.projects-layer p {
+  font-size: 1.6rem;
+  margin: 1rem 0 2rem;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+}
+
+.projects-layer a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 5rem;
+  height: 5rem;
+  background: #000000;
+  border-radius: 20%;
+}
+
+.projects-layer a i {
+  font-size: 2rem;
+}
+@media (min-width:300px) and (max-width:1024px) {
+    .projects-container {
+    grid-template-columns: 1fr;
+  }
+    
+}
+    </style>
+</head>
+<body>
+     <!-- Project Section -->
+    <section class="projects" id="projects">
+        <h2>Bootstraps Projects</h2>
+        <div class="projects-container">
+          <div class="projects-box">
+            <a href="bootstrap.html">
+              <img
+                src="assets/Bootstrap1.jpg"
+                alt="Project Image" style="background-size: cover;"
+              />
+              <div class="projects-layer">
+                <p style="font-size: 40px; color: #fff;">Layout 1</p>
+              </div>
+            </a>
+          </div>
+          <a href="sample_page.html">
+          <div class="projects-box">
+            <img src="assets/Bootstarp2.jpg" alt="Project Image" />
+            <div class="projects-layer">
+              <p  style="font-size: 40px; color: #fff; ">Layout 2</p>
+            </div>
+          </div></a>
+        </div>
+      </section>
+</body>
+</html>

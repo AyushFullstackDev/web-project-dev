@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="https://www.creativefabrica.com/wp-content/uploads/2022/02/21/ab-letter-typography-vector-logo-design-Graphics-25677286-1.jpg" type="image/x-icon">
+    <title>iframe first</title>
+    <style>
+        .main{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: row;
+        }
+        .one-box{
+            width: 50%;
+            height: 100%;
+            background-color: #153448;
+        }
+        .two-box{
+            width: 50%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        .two-box-one{
+            width: 100%;
+            height: 50%;
+            background-color: #D8EFD3;
+        }
+        .two-box-two{
+            width: 100%;
+            height: 50%;
+            background-color: #95D2B3;
+        }
+        .audio-player{
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+      <!-- Iframe -->
+    <div class="main">
+        <div class="one-box">
+            <iframe src="https://colorhunt.co/" Height="100%" Width="100%" ></iframe>
+        </div>
+        <!-- Audio Division -->
+        <div class="two-box">
+            <div class="two-box-one">
+                <audio class="audio-player" src="assets/audio/sample_audio.mp3" controls></audio>
+            </div>
+            <!-- Video Division -->
+            <div class="two-box-two">
+                <video class="audio-player" controls src="assets/videos/samlpe_video.mp4" autoplay loop></video>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
