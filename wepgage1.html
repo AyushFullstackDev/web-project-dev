@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="auto">
+  <head>
+    <script src="/docs/5.3/assets/js/color-modes.js"></script>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta
+      name="author"
+      content="Mark Otto, Jacob Thornton, and Bootstrap contributors"
+    />
+    <meta name="generator" content="Hugo 0.122.0" />
+    <title>Blog Template · Bootstrap v5.3</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      rel="canonical"
+      href="https://getbootstrap.com/docs/5.3/examples/blog/"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@docsearch/css@3"
+    />
+
+    <link
+      href="/docs/5.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <!-- Favicons -->
+    <link
+      rel="apple-touch-icon"
+      href="/docs/5.3/assets/img/favicons/apple-touch-icon.png"
+      sizes="180x180"
+    />
+    <link
+      rel="icon"
+      href="/docs/5.3/assets/img/favicons/favicon-32x32.png"
+      sizes="32x32"
+      type="image/png"
+    />
+    <link
+      rel="icon"
+      href="/docs/5.3/assets/img/favicons/favicon-16x16.png"
+      sizes="16x16"
+      type="image/png"
+    />
+    <link rel="manifest" href="/docs/5.3/assets/img/favicons/manifest.json" />
+    <link
+      rel="mask-icon"
+      href="/docs/5.3/assets/img/favicons/safari-pinned-tab.svg"
+      color="#712cf9"
+    />
+    <link rel="icon" href="/docs/5.3/assets/img/favicons/favicon.ico" />
+    <meta name="theme-color" content="#712cf9" />
+
+    <!-- Box icon link -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <style>
+        body{
+            background-color: #1A2130;
+            color: #fff;
+        }
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        width: 100%;
+        height: 3rem;
+        background-color: rgba(0, 0, 0, 0.1);
+        border: solid rgba(0, 0, 0, 0.15);
+        border-width: 1px 0;
+        box-shadow: inset 0 0.5em 1.5em rgba(0, 0, 0, 0.1),
+          inset 0 0.125em 0.5em rgba(0, 0, 0, 0.15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -0.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .btn-bd-primary {
+        --bd-violet-bg: #712cf9;
+        --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+        --bs-btn-font-weight: 600;
+        --bs-btn-color: var(--bs-white);
+        --bs-btn-bg: var(--bd-violet-bg);
+        --bs-btn-border-color: var(--bd-violet-bg);
+        --bs-btn-hover-color: var(--bs-white);
+        --bs-btn-hover-bg: #6528e0;
+        --bs-btn-hover-border-color: #6528e0;
+        --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+        --bs-btn-active-color: var(--bs-btn-hover-color);
+        --bs-btn-active-bg: #5a23c8;
+        --bs-btn-active-border-color: #5a23c8;
+      }
+
+      .bd-mode-toggle {
+        z-index: 1500;
+      }
+
+      .bd-mode-toggle .dropdown-menu .active .bi {
+        display: block !important;
+      }
+      .bx{
+        font-size: 3rem;
+        color:#fff;
+      }
+      .cards{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+    </style>
+
+    <!-- Custom styles for this template -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Playfair&#43;Display:700,900&amp;display=swap"
+      rel="stylesheet"
+    />
+    <!-- Custom styles for this template -->
+    <link href="blog.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#"> <img
+              class="bd-placeholder-img rounded-circle"
+              width="40"
+              height="40"
+              src="https://png.pngtree.com/template/20191009/ourmid/pngtree-letter-sw-logo-design-vector-initials-sw-logo-image_315675.jpg"
+              aria-label="Placeholder"
+              preserveAspectRatio="xMidYMid slice"
+              focusable="false"
+            >Scrapवाला</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarCollapse"
+              aria-controls="navbarCollapse"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+              <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="webpage.html">घर</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+              </ul>
+                <a href="webpage2.html"><button class="btn btn-outline-success" type="submit">
+                    संपर्क
+                </button></a>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <!-- close header -->
+    <main class="container">
+      <div class="p-4 p-md-5 mb-4 rounded text-body-emphasis bg-body-secondary">
+        
+        <div class="col-lg-6 px-0">
+            <br>
+          <h1 class="display-4 fst-italic">
+            हमारी सर्वोत्तम सेवाएँ
+          </h1>
+          <p class="lead my-3">
+            भंगारवाला (कबाड़ीवाला) डीलिंग में आपका स्वागत है, मुंबई में सभी प्रकार के स्क्रैप के लिए आपका प्रमुख गंतव्य! हम व्यक्तियों, व्यवसायों और उद्योगों के लिए व्यापक सेवाएँ प्रदान करने में विशेषज्ञ हैं जो अपनी स्क्रैप सामग्री बेचना चाहते हैं। हमारे कुशल और विश्वसनीय समाधानों के साथ, हम आपके स्क्रैप के मूल्य को अधिकतम करते हुए एक परेशानी मुक्त अनुभव सुनिश्चित करते हैं।
+          </p>
+          <p class="lead mb-0">
+            <a href="webpage2.html3000" class="text-body-emphasis fw-bold"
+              ><button class="btn btn-outline-success" type="submit">
+                अपना कबाड़ बेचो →
+              </button></a
+            >
+          </p>
+        </div>
+      </div>
+
+      <div class="row mb-2">
+        <div class="col-md-6">
+          <div
+            class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
+          >
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-primary-emphasis"
+                >500+ सेवाएँ पूर्ण</strong
+              >
+              <h3 class="mb-0">पर्यावरण बचाएँ</h3>
+              <div class="mb-1 text-body-secondary"></div>
+              <p class="card-text mb-auto">
+                पुनर्चक्रण से संसाधनों का संरक्षण होता है, ऊर्जा की बचत होती है, तथा पर्यावरण की रक्षा में मदद मिलती है, क्योंकि हम पर्यावरण को बचाने की दिशा में काम कर रहे हैं।
+              </p>
+              <a
+                href="#"
+                class="icon-link gap-1 icon-link-hover stretched-link"
+              >
+              जारी रखें |
+                <svg class="bi"><use xlink:href="#chevron-right" /></svg>
+              </a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <img
+                class="bd-placeholder-img"
+                width="200"
+                height="250"
+                src="https://bhangarwalah.com/wp-content/uploads/2023/05/planet.png"
+                aria-label="Placeholder: Thumbnail"
+                preserveAspectRatio="xMidYMid slice"
+                focusable="false"
+              >
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#55595c" />
+                <text x="50%" y="50%" fill="#eceeef" dy=".3em"></text>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div
+            class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
+          >
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-success-emphasis"
+                >150+ खुश ग्राहक</strong
+              >
+              <h3 class="mb-0">प्रतिस्पर्धात्मक कीमत</h3>
+              <div class="mb-1 text-body-secondary"></div>
+              <p class="mb-auto">
+                हम दरवाजे पर सेवा के लिए न्यूनतम परिचालन लागत को ध्यान में रखते हुए ग्राहकों को सही मूल्य देते हैं।
+              </p>
+              <a
+                href="#"
+                class="icon-link gap-1 icon-link-hover stretched-link"
+              >
+              जारी रखें |
+                <svg class="bi"><use xlink:href="#chevron-right" /></svg>
+              </a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <img
+                class="bd-placeholder-img"
+                width="200"
+                height="250"
+                src="https://bhangarwalah.com/wp-content/uploads/2023/05/cash-on-delivery.png"
+                aria-label="Placeholder: Thumbnail"
+                preserveAspectRatio="xMidYMid slice"
+                focusable="false"
+              >
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#55595c" />
+                <text x="50%" y="50%" fill="#eceeef" dy=".3em"></text>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- middle  -->
+    
+     <!-- end middle -->
+    <!-- features -->
+    <div class="album py-5 bg-body-tertiary">
+        <div class="px-4 py-5 my-5 text-center">
+            <h1 class="display-5 fw-bold text-body-emphasis">Scrapवाला को क्यों चुनें?</h1>
+            
+          </div>
+        <div class="container">
+    
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            <div class="col">
+              <div class="card shadow-sm">
+                <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="https://bhangarwalah.com/wp-content/uploads/2023/05/coin-collecting-1.png" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em"></text></svg>
+                <div class="card-body">
+                    <h2>स्क्रैप संग्रह</h2>
+                  <p class="card-text">हम समझते हैं कि स्क्रैप का परिवहन चुनौतीपूर्ण हो सकता है। इसलिए हम पूरे मुंबई में सुविधाजनक स्क्रैप संग्रह और पिक-अप सेवाएँ प्रदान करते हैं। हमारी टीम आपके स्थान पर जाएगी, आपके पास मौजूद स्क्रैप की मात्रा और प्रकार का आकलन करेगी, और इसे सुरक्षित रूप से हमारी सुविधा तक पहुँचाएगी।</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                     <a href="webpage3.html"> <button type="button" class="btn btn-sm btn-outline-secondary">और अधिक जाने →</button></a>
+                      
+                    </div>
+                    <small class="text-body-secondary">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="https://bhangarwalah.com/wp-content/uploads/2023/05/car.png" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em"></text></svg>
+                <div class="card-body">
+                    <h2>वाहन स्क्रैपिंग</h2>
+                  <p class="card-text">भंगारवाला में, हम मुंबई में व्यापक वाहन स्क्रैपिंग सेवाएँ प्रदान करते हैं। हम जीवन के अंत तक वाहनों के जिम्मेदार और पर्यावरण के अनुकूल निपटान के महत्व को समझते हैं, और हमारी टीम आपके वाहन स्क्रैप की ज़रूरतों के लिए परेशानी मुक्त और कुशल समाधान प्रदान करने के लिए समर्पित है।</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a href="webpage3.html"> <button type="button" class="btn btn-sm btn-outline-secondary">और अधिक जाने →</button></a>
+                     
+                    </div>
+                    <small class="text-body-secondary">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="https://bhangarwalah.com/wp-content/uploads/2023/05/demolition.png" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em"></text></svg>
+                <div class="card-body">
+                    <h2>तोड़फोड़</h2>
+                  <p class="card-text">भंगारवाला में, हम मुंबई में व्यापक विध्वंस सेवाएं प्रदान करने में गर्व महसूस करते हैं। हमारी विशेषज्ञ टीम कुशल और सुरक्षित स्क्रैप हटाने में माहिर है, जो हमारे मूल्यवान ग्राहकों के लिए परेशानी मुक्त अनुभव सुनिश्चित करती है।</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a href="webpage3.html"> <button type="button" class="btn btn-sm btn-outline-secondary">और अधिक जाने →</button></a>
+                    </div>
+                    <small class="text-body-secondary">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+  </div>
+            <!-- Heading -->
+ <div class="py-5 text-center">
+                <img class="d-block mx-auto mb-4" src="https://png.pngtree.com/template/20191009/ourmid/pngtree-letter-sw-logo-design-vector-initials-sw-logo-image_315675.jpg" alt="" width="72" height="57">
+                <h2>अपना कबाड़ बेचो</h2>
+                <p class="lead">3 आसान चरणों में अपना स्क्रैप बेचें</p>
+</div>
+<div class="cards">
+    <div class="card" style="width: 18rem;">
+        <img src="https://bhangarwalah.com/wp-content/uploads/elementor/thumbs/WhatsApp-Image-2023-01-22-at-1.17.45-PM-2-q4t1zvw4dnjxi90srsf4be1hloukl4st0tav94wekw.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">हमारी सेवा बुक करें</p>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="https://bhangarwalah.com/wp-content/uploads/elementor/thumbs/WhatsApp-Image-2023-01-22-at-1.17.45-PM-1-q4t1zvw4dnjxi90srsf4be1hloukl4st0tav94wekw.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">रास्ते में पिकअप</p>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="https://bhangarwalah.com/wp-content/uploads/elementor/thumbs/WhatsApp-Image-2023-01-22-at-1.17.45-PM-q4t1zvw4dnjxi90srsf4be1hloukl4st0tav94wekw.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">पिकअप लड़के आपके घर पर आते हैं।</p>
+        </div>
+      </div>
+</div>
+<!-- foooter -->
+    <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+        <p>© 2024 कंपनी, इंक. सर्वाधिकार सुरक्षित।</p>
+        <ul class="list-unstyled d-flex">
+          <li class="ms-3"><a class="link-body-emphasis" href="#"><i class='bx bxl-facebook-circle'></i></a></li>
+          <li class="ms-3"><a class="link-body-emphasis" href="#"><i class='bx bxl-instagram'></i></a></li>
+          <li class="ms-3"><a class="link-body-emphasis" href="#"><i class='bx bxl-twitter'></i></a></li>
+        </ul>
+      </div>
+    <script
+      src="/docs/5.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
